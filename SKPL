@@ -1,0 +1,81 @@
+I. Pendahuluan
+1.1 Tujuan Penulisan Dokumen
+Dokumen ini ditulis dalam rangka menjabarkan Spesifikasi Kebutuhan Perangkat Lunak software aplikasi system informasi yang akan digunakan oleh Kelompok 2 Mata Kuliah Analisis Design dan System. Penjabaran spesifikasi perangkat lunak meliputi deskripsi umum perangkat lunak dan deskripsi kebutuhan perangkat lunak. Perangkat lunak yang akan dibangun oleh Kelompok 2, Kelompok kami ini, bernama SIPAUD. Tujuan software aplikasi tersebut adalah MENDEKATKAN HUBUNGAN ORANGTUA DENGAN TIM PENGAJAR dan MUDAH, NYAMAN, EFISIEN KARENA SISTEM SUDAH TERINTEGRASI DENGAN DATABASE TERDITRIBUSI.
+1.2 Lingkup Masalah
+Untuk melihat perkembangan belajar anak di sekolah, mengurangi dan dapat menghilangkan kebiasaan hal hal yang dilakukan secara manua dan mengurangi penggunaan jumlah kertas, maka SIPAUD adalah sebuah software aplikasi system informasi berbasis web yang digunaan untuk Sekolah Pra-TK atau Paud. SIPAUD merupakan perantara interaksi komunikasi antar orang tua murid dengan Guru serta antar orang tua murid. Sistem informasi didalam SIPAUD banyak memiliki content dan fungsi masing masing. SIPAUD sangat efisien dalam penginputan dan update data. SIPAUD memiliki 4 bottom ada homepage atau halaman utama yaitu, Tombol Home, About, Login, serta Gallery. Pengguna system informasi tersebut awalnya melakukan pendaftaran atau sign up(1 akun hanya mewakili 1 murid), lalu Login/sign in, kemudian untuk panduan aplikasi dan isi semua kegunaan aplikasi ada di menu About. Menu Gallery berisikan bermacam-macam gambar berupa proses belajar-mengajar, kegiatan sekolah, artikel parenting dan lain sebagainya. Lalu terdapat menu post atau kabar tentang perkembangan peserta didik selama proses kegiatan sekolah. Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui Menu Menu yang ada di SIPAUD. Menu yang akan dilaporkan admin atau guru kepada orang tua murid terdapat beberapa aspek penilaian, antara lain:
+1.	Forum
+2.	IT
+3.	Ngajiku
+4.	Afektif
+5.	Kognitif
+6.	Serta Psikomotorik
+Disetiap icon menu memiliki fungsi masing-masing. Serta apabila sudah melihat hasil laporan atau raport, pemilik akun dapat logout.
+1.3 Definisi, Istilah dan Singkatan
+Berikut definisi, istilah serta singkatan yang digunakan dalam dokumen ini:
+
+Tabel 1 Definisi, istilah dan singkatan
+Definisi, Istilah dan/atau Singkatan 	Penjelasan
+DFD 	Data Flow Diagram. Diagram yang menggambarkan aliran data.
+ERD 	Entity Relationship Diagram. Diagram yang menggambarkan entitas suatu
+objek beserta relasinya.
+Interface 	Antarmuka antara perangkat lunak dan pengguna
+Database Teristribusi 	
+Pengelolaan Layanan dan fitur
+
+ID	
+Identitas
+
+SI 	Sistem Informasi
+ADS	Analisis Design Sistem
+IT	Informasi dan Teknologi
+
+1.4 Deskripsi umum Dokumen (Ikhtisar)
+Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) ini berisikan beberapa
+bagian besar, antara lain pendahuluan, deskripsi umum perangkat lunak, dan deskripsi kebutuhan.
+Bagian pendahuluan berisi tujuan penulisan dokumen yang menjelaskan alasan
+dokumen ini dibuat, lingkup masalah yang berisi ringkasan deskripsi dari software aplikasi yang akan dibuat, definisi, istilah dan singkatan yang digunakan dalam dokumen.
+Bagian deskripsi umum perangkat lunak berisi deskripsi umum dari sistem yang dibuat,
+karakteristik pengguna sistem, batasan yang dipakai dalam perangkat lunak itu sendiri, dan
+lingkungan operasi yang diperuntukan bagi perangkat lunak yang dibuat.
+Bagian deskripsi kebutuhan di dalam dokumen ini meliputi kebutuhan antarmuka
+eksternal, kebutuhan fungsional, kebutuhan non fungsional, kebutuhan data, batasan
+perancangan perangkat lunak, keruntunan, dan ringkasan dari kebutuhan perangkat lunak,
+baik itu kebutuhan fungsional maupun kebutuhan non fungsional. Kebutuhan antarmuka
+eksternal meliputi antarmuka pemakai, antarmuka perangkat keras, antarmuak perangkat
+lunak, dan antarmuka komunikasi. Kebutuhan fungsional dan kebutuhan non fungsional
+perangkat lunak diuraikan dengan lengkap di bagian ini dan ringkasan dari kebutuhan
+perangkat lunak yang dibuat disertakan dalam dokumen ini. Kebutuhan fungsional perangkat
+lunak digambarkan dalam bentuk Data Flow Diagram (DFD), di mana DFD yang dibuat
+meliputi diagram konteks, DFD level 1, dan DFD level 2. Data store dari DFD yang dibuat
+pun dijelaskan di dalam dokumen ini. Selain DFD, kebutuhan fungsional perangkat lunak
+digambarkan dalam spesifikasi proses. Kebutuhan data dari perangkat lunak digambarkan
+dalam Entity Relationship Diagram (E-R Diagram). Batasan perancangan dari perangkat
+lunak yang akan dibuat tentunya harus dijelaskan dalam dokumen ini agar pengembang
+perangkat lunak lebih mudah dalam melakukan pekerjaannya. Keruntunan dari perangkat
+lunak yang dibuat digambarkan dengan cara mapping kebutuhan fungsional dengan proses
+pada DFD dan mapping data store DFD dengan Entity-Relationship Diagram.
+2 Deskripsi Umum Perangkat Lunak
+2.1 Deskripsi Umum Sistem
+Untuk melihat perkembangan belajar anak di sekolah, mengurangi dan dapat menghilangkan kebiasaan hal hal yang dilakukan secara manua dan mengurangi penggunaan jumlah kertas, maka SIPAUD adalah sebuah software aplikasi system informasi berbasis web yang digunaan untuk Sekolah Pra-TK atau Paud. SIPAUD merupakan perantara interaksi komunikasi antar orang tua murid dengan Guru serta antar orang tua murid. Sistem informasi didalam SIPAUD banyak memiliki content dan fungsi masing masing. SIPAUD sangat efisien dalam penginputan dan update data. SIPAUD memiliki 4 bottom ada homepage atau halaman utama yaitu, Tombol Home, About, Login, serta Gallery. SIPAUD sangat efisien dalam penginputan dan update data. SIPAUD memiliki 4 bottom ada homepage atau halaman utama yaitu, Tombol Home, About, Login, serta Gallery. Pengguna system informasi tersebut awalnya melakukan pendaftaran atau sign up(1 akun hanya mewakili 1 murid), lalu Login/sign in, kemudian untuk panduan aplikasi dan isi semua kegunaan aplikasi ada di menu About. Menu Gallery berisikan bermacam-macam gambar berupa proses belajar-mengajar, kegiatan sekolah, artikel parenting dan lain sebagainya. Lalu terdapat menu post atau kabar tentang perkembangan peserta didik selama proses kegiatan sekolah. Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui menu menu yang ada di SIPAUD.
+Deskripsi umum interaksi orang tua peserta didik dengan software aplikasi(admin atau antar orang tua peserta didik):
+1.	ORANGTUA DAPAT MELAKUKAN INPUT IDENTITAS DIRI
+2.	ORANGTUA DAPAT MELAKUKAN UPDATE IDENTITAS DIRI
+3.	ORANGTUA DAPAT MELIHAT NILAI ANAK
+4.	ORANGTUA DAPAT MENGOMENTARI SETIAP NILAI YANG DIBERIKAN GURU.
+ 
+Gambar halaman utama SIPAUD
+2.2 Karakteristik Pengguna
+Tabel 3 Karakteristik pengguna
+
+Kategori pengguna			Tugas				Hak akses ke aplikasi
+User/orang tua peserta didik	Melihat tampilan web dan mengoperasikan aplikasi	Melakukan pendaftaran
+Sign in sebagai User
+Admin 	Memperbaharui data pada menu menu aplikasi.	Sign in sebagai admin dan dapat meakukan insert dan update pada database terdistribusi.
+
+2.3 Batasan
+Dalam pembuatan perangkat lunak system informasi ini, ada beberapa batasan yang digunakan. Batasanbatasan tersebut antara lain :
+
+1.	Pengguna aplikasi atau user hanya dapat dilakukan apabila pengguna sudah melakukan pendaftaran atau sign in.
+2.	Browser menampilkan tulisan RTO(Request Time-Out) saat koneksi dengan web terkendala.
+3.	Sistem menampilkan POP-UP “Data belum diupload”saat guru/admin belum melakukan input nilai untuk setiap aspek. 
+
