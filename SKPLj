@@ -1,0 +1,129 @@
+1. Pendahuluan
+   1.1. Tujuan
+   1.2. Lingkup Masalah
+   1.3. Definisi (,etc)
+   1.4. ..
+   1.5. ..
+   1.6. Ikhtisar
+2. Deskripsi Umum Perangkat Lunak
+   2.1. xx
+3. Deskripsi Kebutuhan
+   3.1. Deskripsi Kebutuhan Antarmuka Eksternal
+        Berikut fasilitas-fasilitas antarmuka eksternal dari perangkat lunak SIPAUD yang dibutuhkan, diantaranya:
+        3.1.1. Antarmuka Pemakai
+               User interface yang digunakan untuk mengoperasikan perangkat lunak SIPAUD antara lain:
+               a. Tampilan awal web
+               b. Tampilan home (halaman utama)
+               c. Tampilan login
+               d. Tampilan gallery kegiatan siswa didik
+               e. Tampilan katalog layanan
+               f. Tampilan roomchat dari forum
+               
+               Alat-alat yang mendukung antarmuka pemaai sebagai berikut:
+               a. Smartphone
+               b. PC/Komputer
+        3.1.2. Antarmuka Perangkat Keras
+               Antarmuka perangkat keras yang digunakan untuk mengoperasikan perangkat lunak antara lain:
+               a. NIC FastEthernet atau Gigabit Ethernet
+               b. Kabel LAN - UTP RJ45
+               c. ASDL Modem
+               d. Paket data internet / wifi
+        3.1.3. Antarmuka Perangkat Lunak
+               Antarmuka perangkat lunak yang digunakan untuk mengoperasikan perangkat lunak antara lain:
+               a. ?
+        3.1.4. Antarmuka Komunikasi
+               Antarmuka komunikasi yang digunakan untuk mengoperasikan perangkat lunak antara lain:
+               a. Kabel LAN - UTP RJ45
+               b. ASDL Modem
+               c. Paket data internet / wifi
+   3.2. Kebutuhan Fungsional
+        a. Perangkat lunak dapat menampilkan form login
+           Pengguna yang telah terdaftar bisa melakukan login, sehingga perangkat lunak perlu menampilkan form login
+        b. Perangkat lunak dapat menerima username dan password baru dari orangtua
+           Username dan password yang dimasukkan orangtua harus bisa diterima oleh perangkat lunak
+        c. Perangkat lunak dapat menyimpan perubahan data
+           c1. Setelah orangtua melakukan editing username dan password sesuai ketentuan sistem, perangkat lunak menyimpan data tersebut
+           c2. Pihak guru dan orangtua juga dapat melakukan perubahan identititas (jika dibutuhkan), perangkat lunak menyimpan data tersebut
+        d. Perangkat lunak dapat form entri pendaftaran
+           Form pendaftaran hanya terletak pada bagian admin saat ingin menambahkan data guru baru, peserta didik baru, dan orangtua baru
+        e. Perangkat lunak dapat menampilkan katalog layanan
+           Katalog ini menampilkan informasi layanan apa saja yang dimiliki web ini
+        f. Perangkat lunak dapat menampilkan hasil belajar peserta didik pada orangtua
+           f1. Hasil belajar peserta didik ini menampilkan informasi hasil belajar berupa id, nama, asal kelas, nama wali kelas, dan aspek penilaian yang dilakukan oleh guru yang bersangkutan
+           f2. Hasil belajar akan ditampilkan setiap semester ATAU bisa saja saat anak mengalami perkembangan tertentu yang dinilai cukup mengesankan
+        g. Perangkat lunak dapat menampilkan form komentar
+           Orangtua bisa menambahkan komentar pada hasil penilaian anak, sehingga perangkat lunak perlu menampilkan form komentar 
+        h. Perangkat lunak dapat menampilkan daftar artikel sekolah
+           Dalam daftar ini berisi banyak artikel seputar parenting, berita yang masih hangat disekolah (misalkan: ada siswa berprestasi setiap tahunnya)
+        i. Perangkat lunak dapat mengirimkan notifikasi
+           Notifikasi yang dimaksud berupa laporan hasil belajar, artikel baru, dan aktifitas forum kepada orangtua
+        j. Perangkat lunak dapat menampilkan daftar bank yang bekerjasama
+           Orangtua dapat membayar SPP atau tagihan melalui bank yang telah ditunjuk dan terdaftar
+        k. Perangkat lunak dapat menampilkan laporan keuangan sekolah (hanya di admin)
+           Laporan keuangan bulanan sekolah dapat ditampilkan sistem berdasarkan hasil akumulasi laporan dari setiap bank
+        l. Perangkat lunak dapat men-generate laporan pertanggungjawaban keuangan sekolah
+           Apabila ada permintaan laporan pertanggungjawaban, perangkat lunak akan meng-generate laporan pertanggungjawaban 
+        3.2.1. Diagram Konteks
+        3.2.2. DFD Level 1
+        3.2.3. Spesifikasi Proses
+        3.2.4. Data Store
+   3.3. Kebutuhan Data
+        3.3.1. E-R Diagram
+   3.4. Kebutuhan Non-Fungsional
+        a. Status = Availability
+           Sistem harus terus beroperasi 7 hari perminggu, 24 per hari tanpa gagal
+        b. Status = Reliability
+           Kegagalan dalam proses transaksi memiliki toleransi tiga kali gagal dalam satu minggu
+        c. Status = Ergonomy
+           Tampilan antarmuka web SIPAUD mudah dipahami dan mudah diingat user karena estetika yang baik dan bagus
+        d. Status = Portability
+           Perangkat Lunak dapat dipakai di platofrm Windows dan Linux 
+        e. Status = Effectivity
+           Perangkat lunak dapat dijalankan oleh beberapa web browser
+           Memory = N/A
+        f. Status = Response Time
+           Perangkat Lunak mampu melakukan update data dalam waktu 5 detik
+           Perangkat Lunak mampu membuka data (artikel, nilai identitas) dalam waktu 5 detik
+           Safety = N/A
+        g. Status = Security
+           Perangkat lunak diamankan menggunakan fitur TLS dan SSL
+        h. Status = Security
+           Perangkat lunak menolak input pengguna yang akan mendaftarkan diri dengan password kurang dari 8 karakter
+        i. Others 1: Tampilan Logo Sekolah
+           Setiap layer harus mengandung logo sekolah
+   3.5. Batasan Perancangan
+        Batasan perancangan yang dipakai dalam pengembangan perangkat lunak SIPAUD antara lain:
+        a. Tampilan web dibuat dengan menggunakan photoshop dan corel draw
+        b. Text editor yang digunakan adalah sublime text dan/atau notepad++
+        c. Bahasa pemrograman yang digunakan adalah Java
+   3.6. Keruntutan
+        
+        3.6.1. Data Store vs E-R
+   3.7. Ringkasan Kebutuhan
+        Perangkat lunak yang dibuat memiliki dua jenis kebutuhan, yaitu kebutuhan fungsional dan kebutuhan non fungsional.
+        Kebutuhan ini mencerminkan semua hal yang harus dipenuhi, dan nantinya akan menjadi arahan untuk tahapan testing, karena pada dasarnya semua kebutuhan harus dapat ditest.
+        Berikut ini ringkasan semua kebutuhan perangkat lunak SIPAUD:
+        a. Kebutuhan Fungsional
+           a1. Perangkat lunak dapat menampilkan form login
+           a2. Perangkat lunak dapat menerima username dan password baru dari orangtua
+           a3. Perangkat lunak dapat menyimpan perubahan data
+           a4. Perangkat lunak dapat form entri pendaftaran
+           a5. Perangkat lunak dapat menampilkan katalog layanan
+           a6. Perangkat lunak dapat menampilkan hasil belajar peserta didik pada orangtua
+           a7. Perangkat lunak dapat menampilkan form komentar
+           a8. Perangkat lunak dapat menampilkan daftar artikel sekolah
+           a9. Perangkat lunak dapat mengirimkan notifikasi
+           a10. Perangkat lunak dapat menampilkan daftar bank yang bekerjasama
+           a11. Perangkat lunak dapat menampilkan laporan keuangan sekolah (hanya di admin)
+           a12. Perangkat lunak dapat men-generate laporan pertanggungjawaban keuangan sekolah
+        b. Kebutuhan Non - Fungsional
+           b1. Sistem harus terus beroperasi 7 hari perminggu, 24 per hari tanpa gagal
+           b2. Kegagalan dalam proses transaksi memiliki toleransi tiga kali gagal dalam satu minggu
+           b3. Tampilan antarmuka web SIPAUD mudah dipahami dan mudah diingat user karena estetika yang baik dan bagus
+           b4. Perangkat Lunak dapat dipakai di platofrm Windows dan Linux
+           b5. Perangkat lunak dapat dijalankan oleh beberapa web browser
+           b6. Perangkat Lunak mampu melakukan update data dalam waktu 5 detik
+           b7. Perangkat Lunak mampu membuka data (artikel, nilai identitas) dalam waktu 5 detik
+           b8. Perangkat lunak diamankan menggunakan fitur TLS dan SSL
+           b9. Perangkat lunak menolak input pengguna yang akan mendaftarkan diri dengan password kurang dari 8 karakter
+           b10. Setiap layer harus mengandung logo sekolah
