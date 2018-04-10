@@ -13,15 +13,14 @@
         Menu Gallery berisikan bermacam-macam gambar berupa proses belajar-mengajar, kegiatan sekolah, artikel parenting dan lain sebagainya.
         Lalu terdapat menu post atau kabar tentang perkembangan peserta didik selama proses kegiatan sekolah.
         Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui Menu Menu yang ada di SIPAUD.
-        Menu yang akan dilaporkan admin atau guru kepada orang tua murid terdapat beberapa aspek penilaian, antara lain:
-        1.2.1.	Forum
-        1.2.2.	IT
-        1.2.3.	Ngajiku
-        1.2.4.	Afektif
-        1.2.5.	Kognitif
-        1.2.6.	Serta Psikomotorik
+        Menu yang akan dilaporkan admin atau guru kepada orang tua murid terdapat berupa penilaian:
+        1.2.1.	Afektif
+        1.2.2. Kognitif
+        1.2.3.	Piskomotorik
+        1.2.4.	IT 
+        1.2.5.	Ngajiku
         Disetiap icon menu memiliki fungsi masing-masing.
-        Serta apabila sudah melihat hasil laporan atau raport, pemilik akun dapat logout.
+        Apabila pengguna telah melihat hasil laporan atau report, pemilik akun dapat memberikan feedback berupa komentar.
    1.3. Definisi, Istilah, dan Singkatan
         a. DFD
            Data Flow Diagram. Diagram yang menggambarkan aliran data.
@@ -36,7 +35,8 @@
    1.4. Aturan Penomoran
         ?
    1.5. Referensi
-        ?
+        Rujukan yang digunakan adalah : 
+        
    1.6. Ikhtisar
         Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) ini berisikan beberapa bagian besar, antara lain pendahuluan, deskripsi umum perangkat lunak, dan deskripsi kebutuhan.
         Bagian pendahuluan berisi tujuan penulisan dokumen yang menjelaskan alasan dokumen ini dibuat, lingkup masalah yang berisi ringkasan deskripsi dari software aplikasi yang akan dibuat, definisi, istilah dan singkatan yang digunakan dalam dokumen.
