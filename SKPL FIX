@@ -1,9 +1,12 @@
+Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
+
 1. Pendahuluan
    1.1. Tujuan
         Dokumen ini ditulis dalam rangka menjabarkan Spesifikasi Kebutuhan Perangkat Lunak software aplikasi system informasi yang akan digunakan oleh Kelompok 2 Mata Kuliah Analisis Design dan System.
         Penjabaran spesifikasi perangkat lunak meliputi deskripsi umum perangkat lunak dan deskripsi kebutuhan perangkat lunak.
-        Perangkat lunak yang akan dibangun oleh Kelompok 2, Kelompok kami ini, bernama SIPAUD.
-        Tujuan software aplikasi tersebut adalah MENDEKATKAN HUBUNGAN ORANGTUA DENGAN TIM PENGAJAR dan MUDAH, NYAMAN, EFISIEN KARENA SISTEM SUDAH TERINTEGRASI DENGAN DATABASE TERDITRIBUSI.
+        Perangkat lunak yang akan dibangun oleh Kelompok 2, bernama SIPAUD.
+        Tujuan software aplikasi SIPAUD adalah MENDEKATKAN HUBUNGAN ORANGTUA DENGAN TIM PENGAJAR dan MUDAH, NYAMAN, EFISIEN KARENA SISTEM SUDAH TERINTEGRASI DENGAN DATABASE TERDITRIBUSI.
+   
    1.2. Lingkup Masalah
         Untuk melihat perkembangan belajar anak di sekolah, mengurangi dan dapat menghilangkan kebiasaan hal hal yang dilakukan secara manua dan mengurangi penggunaan jumlah kertas, maka SIPAUD adalah sebuah software aplikasi system informasi berbasis web yang digunaan untuk Sekolah Pra-TK atau Paud.
         SIPAUD merupakan perantara interaksi komunikasi antar orang tua murid dengan Guru serta antar orang tua murid.
@@ -12,7 +15,7 @@
         Pengguna system informasi tersebut awalnya melakukan pendaftaran atau sign up(1 akun hanya mewakili 1 murid), lalu Login/sign in, kemudian untuk panduan aplikasi dan isi semua kegunaan aplikasi ada di menu About.
         Menu Gallery berisikan bermacam-macam gambar berupa proses belajar-mengajar, kegiatan sekolah, artikel parenting dan lain sebagainya.
         Lalu terdapat menu post atau kabar tentang perkembangan peserta didik selama proses kegiatan sekolah.
-        Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui Menu Menu yang ada di SIPAUD.
+        Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui menu-menu yang ada di SIPAUD.
         Menu yang akan dilaporkan admin atau guru kepada orang tua murid terdapat berupa penilaian:
         1.2.1.	Afektif
         1.2.2. Kognitif
@@ -21,6 +24,7 @@
         1.2.5.	Ngajiku
         Disetiap icon menu memiliki fungsi masing-masing.
         Apabila pengguna telah melihat hasil laporan atau report, pemilik akun dapat memberikan feedback berupa komentar.
+        
    1.3. Definisi, Istilah, dan Singkatan
         a. DFD
            Data Flow Diagram. Diagram yang menggambarkan aliran data.
@@ -50,6 +54,7 @@
         Kebutuhan data dari perangkat lunak digambarkan dalam Entity Relationship Diagram (E-R Diagram).
         Batasan perancangan dari perangkat lunak yang akan dibuat tentunya harus dijelaskan dalam dokumen ini agar pengembang perangkat lunak lebih mudah dalam melakukan pekerjaannya.
         Keruntunan dari perangkat lunak yang dibuat digambarkan dengan cara mapping kebutuhan fungsional dengan proses pada DFD dan mapping data store DFD dengan Entity-Relationship Diagram.
+
 2. Deskripsi Umum Perangkat Lunak
    2.1. Deskripsi Umum Sistem
         Untuk melihat perkembangan belajar anak di sekolah, mengurangi dan dapat menghilangkan kebiasaan hal hal yang dilakukan secara manua dan mengurangi penggunaan jumlah kertas, maka SIPAUD adalah sebuah software aplikasi system informasi berbasis web yang digunaan untuk Sekolah Pra-TK atau Paud.
@@ -72,10 +77,10 @@
         a. Guest
            Tugas     = Melihat tampilan web
            Hak Akses = Melihat dan membaca artikel saja, tanpa komentar
-        b. Orangtua
-           Tugas     = Melihat tampilan laporan belajar siswa, artikel, dan bergabung dalam forum
-           Hak Akses = Menambah data, melihat, membaca, mengomentari, dan membalas komentar
-        c. Guru
+        b. Orangtua peserta didik atau User
+           Tugas     = Melihat tampilan laporan belajar siswa, melihat perkembangan pendidikan anak, artikel parenting, dan dapat bergabung dalam forum
+           Hak Akses = Menambah data, melihat, membaca, mengomentari, dan membalas komentar.
+        c. Guru 
            Tugas     = Melaporkan hasil belajar
            Hak Akses = Menambah data, mengupload, melihat, membaca, mengomentari, dan membalas komentar
         d. Admin
@@ -84,14 +89,17 @@
         e. Bank
            Tugas     = Melakukan dan melaporkan transaksi
            Hak Akses = Melakukan transaksi dengan orangtua, transfer gaji guru, melaporkan transaksi pada pihak sekolah
+           
    2.3. Batasan
         Dalam pembuatan perangkat lunak system informasi ini, ada beberapa batasan yang digunakan.
         Batasan-batasan tersebut antara lain :
         2.3.1. Pengguna aplikasi atau user hanya dapat dilakukan apabila pengguna sudah didaftarkan pihak sekolah.
         2.3.2.	Browser menampilkan tulisan RTO (Request Time-Out) saat koneksi dengan web terkendala.
         2.3.3.	Sistem menampilkan POP-UP “Data belum diupload” saat guru/admin belum melakukan input nilai untuk setiap kategori penilaian.
+   
    2.4. Lingkungan Operasi
-        ...
+        Sekolah Pra-TK atau PAUD.
+
 3. Deskripsi Kebutuhan
    3.1. Deskripsi Kebutuhan Antarmuka Eksternal
         Berikut fasilitas-fasilitas antarmuka eksternal dari perangkat lunak SIPAUD yang dibutuhkan, diantaranya:
@@ -100,13 +108,14 @@
                a. Tampilan awal web
                b. Tampilan home (halaman utama)
                c. Tampilan login
-               d. Tampilan gallery kegiatan siswa didik
+               d. Tampilan gallery (kegiatan siswa didik)
                e. Tampilan katalog layanan
-               f. Tampilan roomchat dari forum
+               f. Tampilan forum (roomchat atau forum diskusi) 
                
-               Alat-alat yang mendukung antarmuka pemaai sebagai berikut:
+               Alat-alat yang mendukung antarmuka pemakai sebagai berikut:
                a. Smartphone
                b. PC/Komputer
+               
         3.1.2. Antarmuka Perangkat Keras
                Antarmuka perangkat keras yang digunakan untuk mengoperasikan perangkat lunak antara lain:
                a. NIC FastEthernet atau Gigabit Ethernet
@@ -121,9 +130,10 @@
                a. Kabel LAN - UTP RJ45
                b. ASDL Modem
                c. Paket data internet / wifi
+               
    3.2. Kebutuhan Fungsional
         a. Perangkat lunak dapat menampilkan form login
-           Pengguna yang telah terdaftar bisa melakukan login, sehingga perangkat lunak perlu menampilkan form login
+           Pengguna yang telah terdaftar bisa melakukan login atau mendaftar sebagai user, sehingga perangkat lunak perlu menampilkan form login
         b. Perangkat lunak dapat menerima username dan password baru dari orangtua
            Username dan password yang dimasukkan orangtua harus bisa diterima oleh perangkat lunak
         c. Perangkat lunak dapat menyimpan perubahan data
@@ -152,11 +162,13 @@
         3.2.2. DFD Level 1
         3.2.3. Spesifikasi Proses
         3.2.4. Data Store
+   
    3.3. Kebutuhan Data
         3.3.1. E-R Diagram
+   
    3.4. Kebutuhan Non-Fungsional
         a. Status = Availability
-           Sistem harus terus beroperasi 7 hari perminggu, 24 per hari tanpa gagal
+           Sistem harus terus beroperasi 7 hari/minggu, 24 per hari tanpa gagal
         b. Status = Reliability
            Kegagalan dalam proses transaksi memiliki toleransi tiga kali gagal dalam satu minggu
         c. Status = Ergonomy
@@ -181,9 +193,11 @@
         a. Tampilan web dibuat dengan menggunakan photoshop dan corel draw
         b. Text editor yang digunakan adalah sublime text dan/atau notepad++
         c. Bahasa pemrograman yang digunakan adalah Java
+   
    3.6. Keruntutan
         
         3.6.1. Data Store vs E-R
+   
    3.7. Ringkasan Kebutuhan
         Perangkat lunak yang dibuat memiliki dua jenis kebutuhan, yaitu kebutuhan fungsional dan kebutuhan non fungsional.
         Kebutuhan ini mencerminkan semua hal yang harus dipenuhi, dan nantinya akan menjadi arahan untuk tahapan testing, karena pada dasarnya semua kebutuhan harus dapat ditest.
@@ -191,7 +205,7 @@
         a. Kebutuhan Fungsional
            a1. Perangkat lunak dapat menampilkan form login
            a2. Perangkat lunak dapat menerima username dan password baru dari orangtua
-           a3. Perangkat lunak dapat menyimpan perubahan data
+           a3. Perangkat lunak dapat menyimpan perubahan atau insert dan update data
            a4. Perangkat lunak dapat form entri pendaftaran
            a5. Perangkat lunak dapat menampilkan katalog layanan
            a6. Perangkat lunak dapat menampilkan hasil belajar peserta didik pada orangtua
