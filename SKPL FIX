@@ -16,7 +16,7 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
         Menu Gallery berisikan bermacam-macam gambar berupa proses belajar-mengajar, kegiatan sekolah, artikel parenting dan lain sebagainya.
         Lalu terdapat menu post atau kabar tentang perkembangan peserta didik selama proses kegiatan sekolah.
         Sistem informasi ini ini dikelola oleh admin yakni Guru yang mengajar di sekolah tersebut yang bertugas memperbaharui menu-menu yang ada di SIPAUD.
-        Menu yang akan dilaporkan admin atau guru kepada orang tua murid terdapat berupa penilaian:
+        Menu yang akan dilaporkan oleh admin atau guru kepada orang tua murid terdapat berupa penilaian:
         1.2.1.	Afektif
         1.2.2. Kognitif
         1.2.3.	Piskomotorik
@@ -24,6 +24,7 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
         1.2.5.	Ngajiku
         Disetiap icon menu memiliki fungsi masing-masing.
         Apabila pengguna telah melihat hasil laporan atau report, pemilik akun dapat memberikan feedback berupa komentar.
+        Apabila seorang user lupa dengan password akunnya, maka dapat mimilih icon atau tombol lupa password lalu aan mengikuti proses untuk mendapatkan password baru dan dapat diset kembali agar dapat login.
         
    1.3. Definisi, Istilah, dan Singkatan
         a. DFD
@@ -31,15 +32,14 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
         b. ERD
            Entity Relationship Diagram. Diagram yang menggambarkan entitas suatu objek beserta relasinya.
         c. Interface
-           Antarmuka antara perangkat lunak dan pengguna
+           Antarmuka antara perangkat lunak dan pengguna atau user.
         d. Datastore
-           Tempat menyimpan data yang terintegrasi dengan database terdistribusi
+           Tempat menyimpan data setelah di update atau insert data yang terintegrasi dengan database terdistribusi
         e. ID
            Identitas pengguna; yaitu: orangtua, guru, siswa, nomor artikel
    1.4. Aturan Penomoran
-        ?
-   1.5. Referensi
-        Rujukan yang digunakan adalah : 
+        
+   1.5. Referensi 
         
    1.6. Ikhtisar
         Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) ini berisikan beberapa bagian besar, antara lain pendahuluan, deskripsi umum perangkat lunak, dan deskripsi kebutuhan.
@@ -194,8 +194,7 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
         b. Text editor yang digunakan adalah sublime text dan/atau notepad++
         c. Bahasa pemrograman yang digunakan adalah Java
    
-   3.6. Keruntutan
-        
+   3.6. Keruntutan  
         3.6.1. Data Store vs E-R
    
    3.7. Ringkasan Kebutuhan
@@ -225,4 +224,4 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
            b7. Perangkat Lunak mampu membuka data (artikel, nilai identitas) dalam waktu 5 detik
            b8. Perangkat lunak diamankan menggunakan fitur TLS dan SSL
            b9. Perangkat lunak menolak input pengguna yang akan mendaftarkan diri dengan password kurang dari 8 karakter
-           b10. Setiap layer harus mengandung logo sekolah
+           b10. Setiap layer harus mengandung logo sekolah.
