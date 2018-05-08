@@ -159,7 +159,25 @@ Spesifikasi Kebutuhan Perangkat Lunak (SKPL) - SIPAUD.
         l. Perangkat lunak dapat men-generate laporan pertanggungjawaban keuangan sekolah
            Apabila ada permintaan laporan pertanggungjawaban, perangkat lunak akan meng-generate laporan pertanggungjawaban 
         3.2.1. Diagram Konteks
-        3.2.2. DFD Level 1
+        3.2.2. DFD Level 0, DFD Level 1, DFD Level 2
+        DFD Level 0:
+        Calon user(Orang Tua anak/peserta didik) melakukan proses pendaftaran untuk mendapatkan sebuah hak akses sebagai user SIPAUD. 
+        Kemudian tersimpan dalam database sebagai 1 akun untuk 1 anak. Proses selanjutnya, Admin bertugas untuk melakukan pengolahan data.
+        Berupa Input dan Update data yang kemudian tersimpan dalam database(Data berupa inputan nama murid dan nilai murid). Lalu hasil pengolahan dari Admin, melaporkan/mempublish segala hal berupa;
+        rekap nilai atau peserta didik kepada orang tua peserta didik tersebut dan Kepala Sekolah.
+        
+        DFD Level 1:
+        Setelah orang tua murid berhasil melalukan pendaftaran akun, kemudian Login. Orang tua siswa dapat mengecek atau melihat hasil penilaian sang anak selama di sekolah, kriteria penilaian berupa;
+        IT, Ngajiku, Afektif, Kognitif, Dan Psikomotorik. Dan semua penilian tersebut didapat dari Guru yang mengajar atau sebagai pendidik. 
+        Kemudian tugas Admin mengelola (proses data berupa input dan update) aplikasi sistem informasi ini. Orang tua murid juga dapat menikmati layanan Forum.
+        Yang memiliki fungsi sebagai RUANG CHAT.
+        Kemudian proses terakhir Admin mempublish/melaporkan semua data ke aplikasi sistem informasi Sipaud yang dapat dilihat oleh Orang Tua. dan melaporkan kepada Kepala Sekolah.
+        Keseluruhan data tersebut telah tersimpan  pada Database.
+        
+        DFD Level 2:
+        Mulai - Login - Menginputkan username dan password - 'Proses' - Jika salah(False) masukkan ulang username dan password - Jika benar(True) Melihat Nilai atau rekap laporan sang anak - Selesai.
+        Rekap data/nilai murid - Insert data - Update data - Laporan rekap penilaian.
+        Laporan rekap penilaian - Menyeleksi raport yang sudahh diisi - 'Proses' - Jika salah(Fasle) Mengoreksi kembali - Jika benar(True) Melaporkan/mempublish Raport Penilaian kepada akun orang Tua - Melapaorkan atau mempublish Raport Penilaian kepada Kepala Sekolah - Laporan rekap Penilaian - Selesai.
         3.2.3. Spesifikasi Proses
         3.2.4. Data Store
    
