@@ -1,0 +1,64 @@
+<?php
+	session_start();
+
+	require "koneksi.php";
+
+	if(isset($_SESSION['id'])) 
+	{
+		header("location: default.php");
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body style="background-color: #2196f3; overflow: hidden;">
+<div style="width: 100%;padding:5px;background-color:#4b79f1;text-align: right;color:white">
+Jl. Damai No 53 Malang, Indonesia (0341) 14045
+	
+</div>
+	<div class="login">
+		<div class="lheader">login</div>
+		<div class="lform">
+			<form action="login.php" method="POST">
+				<input type="text" name="username" id="username" placeholder="username" required>
+				<input type="password" name="password" id="password" placeholder="password" required>
+				<input type="submit" name="login" id="login" value="submit">
+				<a href="default.php"><input type="button" name="cancel" value="cancel"></a>
+			</form>
+
+			<?php
+			if(isset($_POST['login']))
+			{
+				$username=$_POST['username'];
+				$password=$_POST['password'];
+
+				$sql=mysql_query("select * from login where username='$username' and password='$password'")or die(mysql_error());
+
+				if((mysql_num_rows($sql))>0)
+				{
+					$_SESSION['id']=$username;
+					$_SESSION['username']=$username;
+					?>
+					<script type="text/javascript">	
+						document.location="default.php";
+					</script>
+					<?php
+				}
+				else
+				{
+					?>
+					<script type="text/javascript">	
+						alert("Hayoo.. Kamu siapa?");document.location="login.php";
+					</script>
+					<?php
+				}
+			}
+			?>
+		</div>	
+	</div>
+</body>
+</html>
